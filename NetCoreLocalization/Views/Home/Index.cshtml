@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using NetCoreLocalization.Resources;
+@inject LanguageService ShareLocalizer
+
+<div class="text-center">
+    <h1 class="display-4">@ShareLocalizer.GetLocalizedHtmlString("merhaba")</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">
+            @ShareLocalizer.GetLocalizedHtmlString("build")
+
+        </a>.</p>
+</div>
